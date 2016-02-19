@@ -31,10 +31,9 @@ Support for several message bubbles.
     * include that CSS-file in your Theme
 
 2. PHP file
+  * Change Namespace in Message.php file
   * Load Message.php in CDIFactory
-
-####Create custom CDIFactory
-
+  * Create custom CDIFactory
 ```php
 <?php
 
@@ -53,7 +52,10 @@ class CDIFactory extends CDIFactoryDefault
 ?>
 ```
 
-3. Index.php
+3. Config with app
+  * Change to CDIFactory instead of default
+
+4. Index.php
   * furthest down, under "$app->theme->render();" add "$app->message->getMessage()"
 
 
