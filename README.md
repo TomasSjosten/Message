@@ -36,6 +36,7 @@ Support for several message bubbles.
 ####Create custom CDIFactory
 
 ´´´
+
   namespace ...;
 
   use Anax\DI\CDIFactoryDefault;
@@ -53,6 +54,7 @@ Support for several message bubbles.
           });
       }
   }
+  
 ´´´
 
 3. Index.php
