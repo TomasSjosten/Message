@@ -4,12 +4,11 @@
 This is a simple Message plugin that will store message via Session and display it for a given interval.
 Support for several message bubbles.
 
-1. Include
+1. *Include*
   * message.js
   * message.css
-
-##Message.php
-*Include the file wherever you may want to start a message and also where you want to output message.
+  * Message.php
+    * Include the file wherever you may want to start a message and also where you want to output message.
 
 ##Simple SET and GET
 
