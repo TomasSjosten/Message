@@ -1,6 +1,6 @@
 <?php
 
-namespace MyOwn\Message;
+namespace tomas\Message;
 
 class Message
 {
