@@ -1,4 +1,4 @@
-#Plugins made by [Tomas Sjösten](http://tomassjosten.se)
+#Message plugin by [Tomas Sjösten](http://tomassjosten.se)
 -----------------------------
 
 This is a simple Message plugin that will store message via Session and display it for a given interval.
