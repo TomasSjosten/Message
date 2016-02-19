@@ -34,24 +34,25 @@ Support for several message bubbles.
   * Load Message.php in CDIFactory
 
 ####Create custom CDIFactory
+
 ´´´
-namespace ...;
+  namespace ...;
 
-use Anax\DI\CDIFactoryDefault;
-use MyOwn\Message\Message;
+  use Anax\DI\CDIFactoryDefault;
+  use MyOwn\Message\Message;
 
-class CDIFactory extends CDIFactoryDefault
-{
-    public function __construct()
-    {
-        parent::__construct();
+  class CDIFactory extends CDIFactoryDefault
+  {
+      public function __construct()
+      {
+          parent::__construct();
 
-        $this->set('message', function() {
-            $message = new Message();
-            return $message;
-        });
-    }
-}
+          $this->set('message', function() {
+              $message = new Message();
+              return $message;
+          });
+      }
+  }
 ´´´
 
 3. Index.php
