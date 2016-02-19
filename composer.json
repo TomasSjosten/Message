@@ -1,0 +1,19 @@
+{
+    "name": "tomas/message",    
+    "type": "library",
+    "description": "Message handling plugin",
+    "keywords": ["module", "message", "session", "micro"],
+    "homepage": "http://tomassjosten.se",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tomas Sjösten",
+            "email": "tomas.sjosten@gmail.com",
+            "homepage": "http://tomassjosten.se",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    }
+}

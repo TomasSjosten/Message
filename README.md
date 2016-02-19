@@ -20,4 +20,42 @@ Support for several message bubbles.
 2. getMessage()
   *outputs the message
 
+
+##Use with Anax-MVC
+1. Js and Css files
+  * message.js
+    * put into webroot/js
+    * include that JS-file in your Theme
+  * message.css
+    * put into webroot/css
+    * include that CSS-file in your Theme
+
+2. PHP file
+  * Load Message.php in CDIFactory
+
+####Create custom CDIFactory
+´´´php
+namespace ...;
+
+use Anax\DI\CDIFactoryDefault;
+use MyOwn\Message\Message;
+
+class CDIFactory extends CDIFactoryDefault
+{
+    public function __construct()
+    {
+        parent::__construct();
+
+        $this->set('message', function() {
+            $message = new Message();
+            return $message;
+        });
+    }
+}
+´´´
+
+3. Index.php
+  * furthest down, under "$app->theme->render();" add "$app->message->getMessage()"
+
+
 *Drop me a mail tomas.sjosten@gmail.com if you want to give me some feedback.*
