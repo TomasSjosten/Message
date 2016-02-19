@@ -37,10 +37,6 @@ Support for several message bubbles.
 
 ´´´php
 <?php
-namespace ...;
-
-use Anax\DI\CDIFactoryDefault;
-use MyOwn\Message\Message;
 
 class CDIFactory extends CDIFactoryDefault
 {
