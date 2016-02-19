@@ -37,6 +37,11 @@ Support for several message bubbles.
 ```php
 <?php
 
+namespace -Your namespace-
+
+use Anax\DI\CDIFactoryDefault;
+use tomas\Message\Message;
+
 class CDIFactory extends CDIFactoryDefault
 {
     public function __construct()
@@ -52,10 +57,11 @@ class CDIFactory extends CDIFactoryDefault
 ?>
 ```
 
-3. Config with app
+3. Change file "config_with_app.php"
   * Change to CDIFactory instead of default
+  * Add $app->session();
 
-4. Index.php
+4. index.php (or choosen router)
   * furthest down, under "$app->theme->render();" add "$app->message->getMessage()"
 
 
