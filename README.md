@@ -11,14 +11,13 @@ Support for several message bubbles.
     * Include the file wherever you may want to start a message and also where you want to output message.
 
 ##Simple SET and GET
+1. setMessage(_your message_)
+  * accepts array only
+  * ['type', 'msg']
+    * Type either "ok" or "error"
+    * Msg the wanted message to display
 
-
-###setMessage(_your message_)
-*accepts array only
-*['type', 'msg']
-**Type either "ok" or "error"
-**Msg the wanted message to display
-
-*getMessage()
+2. getMessage()
+  *outputs the message
 
 *Drop me a mail tomas.sjosten@gmail.com if you want to give me some feedback.*
