@@ -35,7 +35,7 @@ Support for several message bubbles.
 
 ####Create custom CDIFactory
 
-´´´php
+```php
 <?php
 
 class CDIFactory extends CDIFactoryDefault
@@ -51,7 +51,7 @@ class CDIFactory extends CDIFactoryDefault
     }
 }
 ?>
-´´´
+```
 
 3. Index.php
   * furthest down, under "$app->theme->render();" add "$app->message->getMessage()"
