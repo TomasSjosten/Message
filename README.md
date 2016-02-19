@@ -50,7 +50,7 @@ class CDIFactory extends CDIFactoryDefault
         });
     }
 }
-
+?>
 ´´´
 
 3. Index.php
