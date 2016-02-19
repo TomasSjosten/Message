@@ -34,7 +34,7 @@ Support for several message bubbles.
   * Load Message.php in CDIFactory
 
 ####Create custom CDIFactory
-´´´php
+´´´
 namespace ...;
 
 use Anax\DI\CDIFactoryDefault;
