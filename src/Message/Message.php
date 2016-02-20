@@ -8,6 +8,7 @@ class Message
 
     public function __construct()
     {
+        // Save to object and free Session
         $this->message = (isset($_SESSION['message']) && $_SESSION['message'] != '') ? $_SESSION['message'] : null;
         unset($_SESSION['message']);
     }
@@ -15,12 +16,14 @@ class Message
 
     public function setMessage($thisMessage)
     {
+        // Save new messages to session
         $_SESSION['message'][] = $thisMessage;
     }
 
 
     public function getMessage()
     {
+        // Print messages
         if ($this->message) {
             $html = '<div id="messagebox">';
             foreach ($this->message as $msg)
