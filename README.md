@@ -1,5 +1,6 @@
 #Message plugin by [Tomas Sjösten](http://tomassjosten.se)
 -----------------------------
+[![Build Status](https://travis-ci.org/TomasSjosten/Message.svg?branch=master)](https://travis-ci.org/TomasSjosten/Message)
 
 This is a simple Message plugin that will store message via Session and display it for a given interval.
 Support for several message bubbles.
