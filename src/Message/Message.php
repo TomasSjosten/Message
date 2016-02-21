@@ -34,7 +34,7 @@ class Message
     {
         $html = null;
         // Print messages
-        if ($this->message && $this->message !== '') {
+        if (!empty($this->message) && $this->message !== '') {
             $html = '<div id="messagebox">';
             foreach ($this->message as $msg)
             {
