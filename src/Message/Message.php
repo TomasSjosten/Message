@@ -11,7 +11,7 @@ class Message
     {
         $this->test = $test;
 
-        // Save to object and free Session
+        // Save to object and free Sessions
         if (session_status() === PHP_SESSION_ACTIVE) {
             $this->message = (isset($_SESSION['message']) && $_SESSION['message']) ? $_SESSION['message'] : null;
             unset($_SESSION['message']);
