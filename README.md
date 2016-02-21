@@ -2,6 +2,7 @@
 -----------------------------
 [![Build Status](https://travis-ci.org/TomasSjosten/Message.svg?branch=master)](https://travis-ci.org/TomasSjosten/Message)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/TomasSjosten/Message/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/TomasSjosten/Message/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/TomasSjosten/Message/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/TomasSjosten/Message/?branch=master)
 
 This is a simple Message plugin that will store message via Session and display it for a given interval.
 Support for several message bubbles.
