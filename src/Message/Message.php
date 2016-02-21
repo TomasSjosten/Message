@@ -1,30 +1,40 @@
 <?php
 
-namespace tomas\Message;
+namespace Tosj\Message;
 
 class Message
 {
-    private $message = [];
+    private $message = null;
+    private $test;
 
-    public function __construct()
+    public function __construct(bool $test = false)
     {
+        $this->test = $test;
+
         // Save to object and free Session
-        $this->message = (isset($_SESSION['message']) && $_SESSION['message'] != '') ? $_SESSION['message'] : null;
-        unset($_SESSION['message']);
+        if (session_status() === PHP_SESSION_ACTIVE) {
+            $this->message = (isset($_SESSION['message']) && $_SESSION['message']) ? $_SESSION['message'] : null;
+            unset($_SESSION['message']);
+        }
     }
 
 
     public function setMessage($thisMessage)
     {
-        // Save new messages to session
-        $_SESSION['message'][] = $thisMessage;
+        if ($this->test) {
+            $this->message[] = $thisMessage;
+        } else {
+            // Save new messages to session
+            $_SESSION['message'][] = $thisMessage;
+        }
     }
 
 
     public function getMessage()
     {
+        $html = null;
         // Print messages
-        if ($this->message) {
+        if ($this->message && $this->message !== '') {
             $html = '<div id="messagebox">';
             foreach ($this->message as $msg)
             {
@@ -34,8 +44,7 @@ class Message
                 </div>';
             }
             $html .= '</div>';
-
-            echo $html;
         }
+        return $html;
     }
 }
