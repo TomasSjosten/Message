@@ -7,7 +7,7 @@ class Message
     private $message = null;
     private $test;
 
-    public function __construct(bool $test = false)
+    public function __construct($test = false)
     {
         $this->test = $test;
 
